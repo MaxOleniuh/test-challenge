@@ -5,9 +5,10 @@ import LoginButton from './LoginButton';
 import { GiMechaMask } from 'react-icons/gi';
 
 const NavBar = () => {
+
   return (
     <nav className="navbar navbar-expand-lg bg-dark-blue font-cfont nav">
-      <div className="container">
+      <div className="container-xxl">
         <Link href="/" className="navbar-brand text-white nav-item">
           <GiMechaMask size="2em" className='mask-icon' />
           Sample Page
@@ -25,7 +26,7 @@ const NavBar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto p-2">
-            <li className="nav-item">
+            <li className="nav-item link">
               <Link href="/" className="nav-link text-white">Home
               </Link>
             </li>
@@ -68,10 +69,10 @@ const NavBar = () => {
             <li className="nav-item">
               <Input />
             </li>
-            <li className="nav-item">
-                <LoginButton/>
+            <li>
+              <LoginButton className=""/>
             </li>
-          </ul>         
+          </ul>
         </div>
       </div>
     </nav>
