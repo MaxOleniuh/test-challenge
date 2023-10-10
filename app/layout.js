@@ -1,6 +1,6 @@
 import React from "react";
-import "./custom.css";
-
+import "./main.css";
+import "./navbar.css";
 export const metadata = {
   title: "News Page",
   description: "news page",

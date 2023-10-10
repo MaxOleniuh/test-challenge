@@ -14,7 +14,8 @@ import { GiCardRandom } from 'react-icons/gi';
 
 const SideBar = () => {
   return (
-    <aside className="sidebar">
+    <div className='sidebar-wrapper'>
+      <aside className="sidebar">
       <div className="sidebar-set">
         <div className="sidebar-item active">
           <RiComputerLine className='active-icon'/>
@@ -51,6 +52,8 @@ const SideBar = () => {
         </div>
       </div>
     </aside>
+    </div>
+    
   );
 };
 

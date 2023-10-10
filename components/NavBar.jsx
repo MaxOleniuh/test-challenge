@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Input from './Input';
 import LoginButton from './LoginButton';
 import { GiMechaMask } from 'react-icons/gi';
+import { PiSquaresFourDuotone } from 'react-icons/pi';
 
 const NavBar = () => {
 
@@ -26,6 +27,11 @@ const NavBar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto p-2">
+            <li className="nav-item link">
+              <Link href="/" className='nav-link'>
+          <PiSquaresFourDuotone size="2em" className='squares-icon' />
+        </Link> 
+            </li>
             <li className="nav-item link">
               <Link href="/" className="nav-link text-white">Home
               </Link>

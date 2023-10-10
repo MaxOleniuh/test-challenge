@@ -2,6 +2,7 @@
 import SideBar from "@/components/SideBar";
 import NavBar from "../components/NavBar";
 import CustomFont from "next/font/local";
+import Main from "@/components/Main";
 
 const cfont = CustomFont({
   src: "../public/fonts/static/Teko-Medium.ttf",
@@ -13,6 +14,7 @@ export default function Home() {
     <div className={`${cfont.variable}`}>
       <NavBar />
       <SideBar />
+      <Main />
     </div>
   );
 }
