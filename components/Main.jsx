@@ -2,6 +2,10 @@ import React from "react";
 import Banner from "./Banner";
 import Members from "./Members";
 import FilterContainer from "./FilterContainer";
+import Post from "./Post";
+import Groups from "./Groups";
+import Quests from "./Quests";
+import Badges from "./Badges";
 
 const Main = () => {
   return (
@@ -19,23 +23,33 @@ const Main = () => {
           </div>
         </div>
         <div className="col">
-          <div className="box">3</div>
+          <div className="box">
+            <Groups/>
+          </div>
           </div>
       </div>
-      {/*ANOTHER ROW STARTS */}
       <div className="row cols-3">
         <div className="col">
           <div className="box">
-            <Members/>
+            <Quests />
           </div>
         </div>
-        <div className="col-6 move">
-          <div className="box">Move me</div>
+        <div className="col-6 post">
+          <div className="box">
+            <Post reply={true}/>
+          </div>
         </div>
         <div className="col">
-          <div className="box">3</div>
-          </div>
-          </div>
+          <div className="box">
+            <Badges />
+           </div>
+        </div>
+      </div>
+      <div className="row cols-3">
+          <div className="col-6 anoter-post">
+            <Post reply={false} />
+        </div>
+      </div>
       </div>
   );
 };

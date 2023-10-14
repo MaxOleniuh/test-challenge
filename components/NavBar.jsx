@@ -28,7 +28,7 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto p-2">
             <li className="nav-item link">
-              <Link href="/" className='nav-link'>
+              <Link href="/" className='nav-link squares'>
           <PiSquaresFourDuotone size="2em" className='squares-icon' />
         </Link> 
             </li>

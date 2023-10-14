@@ -76,7 +76,7 @@ nav {
   color: white;
   border: none;
   border-radius: 10px;
-  margin-left: 150px;
+  margin-left: auto;
   transition: background-color 0.2s ease-in;
 }
 .login-btn:hover {
@@ -109,7 +109,9 @@ nav {
     align-items: center;
     font-size: 16px;
   }
-
+  .squares {
+    display: none;
+  }
   .input {
     width: 240px;
     margin-top: 10px;
@@ -122,14 +124,13 @@ nav {
     right: 4px;
   }
   .login-btn {
-    margin: 10px 0 0 0;
-    position: sticky;
+    margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 580px) {
   .input {
-    width: 340px;
+    width: 330px;
   }
 }
 
@@ -147,7 +148,6 @@ nav {
     top: 0;
   }
   .login-btn {
-    margin-left: 50px;
     margin-top: 0;
   }
 }
@@ -156,9 +156,6 @@ nav {
   .input {
     width: 400px;
     margin-left: 100px;
-  }
-  .login-btn {
-    margin-left: 80px;
   }
 }
 
@@ -170,11 +167,5 @@ nav {
   .container {
     max-width: none;
     margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1560px) {
-  .login-btn {
-    margin-left: 300px;
   }
 }
