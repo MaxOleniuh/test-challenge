@@ -1,6 +1,4 @@
-# Project Name
-
-Test Challenge
+# Test Challenge
 
 ## Overview
 
