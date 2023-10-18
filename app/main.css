@@ -8,14 +8,11 @@ body {
   scrollbar-width: none;
   overflow-y: scroll;
 }
-/* 
-body::-webkit-scrollbar {
-  display: none;
-} */
 
 .main-wrapper {
   font-family: "Teko", sans-serif;
   letter-spacing: 0.02cm;
+  overflow-x: hidden;
   gap: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -269,7 +266,7 @@ body::-webkit-scrollbar {
 
 .anoter-post {
   position: relative;
-  left: 300px;
+  left: 395px;
   top: -280px;
 }
 .post-link {
@@ -301,13 +298,12 @@ body::-webkit-scrollbar {
   color: rgb(68, 68, 68);
   margin-bottom: 30px;
 }
-.quests-wrapper,
+.quests-container,
 .badges-wrapper {
-  display: flex;
-  align-items: center;
   border-bottom: 4px solid #ebebeb;
   border-radius: 2px;
 }
+
 .quests-icon {
   margin-right: 10px;
   position: relative;
@@ -339,6 +335,11 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (min-width: 320px) {
+  .main-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
   .background-text {
     margin-top: 10px;
     min-width: 200px;
@@ -353,9 +354,110 @@ body::-webkit-scrollbar {
     font-family: "Arial", sans-serif;
     color: #f3f0f0;
   }
-}
+  .row {
+    margin-bottom: 10px;
+  }
+  .row,
+  .another-row .cols-3 {
+    width: 60vw;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .col,
+  .col-md .col-6 {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 0;
+    width: auto;
+  }
+  .filter-col {
+    width: 100vw;
+  }
+  .filter-container {
+    width: 250px;
+    padding: 5px;
+    justify-content: left;
+    gap: 20px;
+  }
+  .cols-3 {
+    margin-top: 30px;
+  }
+  .post {
+    position: relative;
+    bottom: 250px;
+    margin-top: 150px;
+    height: 100%;
+    font-size: 12px;
+  }
+  .member-title,
+  .topic-reply,
+  .forum-src,
+  .forum-title {
+    font-size: 12px;
+  }
 
+  .quests-wrapper {
+    position: relative;
+    top: 10px;
+    border: none;
+    border-radius: 15px;
+  }
+  .post,
+  .another-post {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .row,
+  .cols-3 {
+    width: 85vw;
+  }
+  .post {
+    display: block;
+    position: relative;
+    top: 10px;
+  }
+  .post-link {
+    font-size: 12px;
+    width: 70px;
+  }
+  .posted-wrapper {
+    margin-left: 0;
+  }
+  .another-post {
+    display: block;
+    top: 200px;
+    margin: 20px 0 20px 0;
+  }
+  .filter-container {
+    gap: 25px;
+  }
+  .badges {
+    position: relative;
+    top: 10px;
+  }
+  .anoter-row {
+    margin-top: 10px;
+  }
+  .filter-title::after {
+    bottom: -15px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .row,
+  .cols-3 {
+    width: 88vw;
+  }
+  .filter-container {
+    gap: 100px;
+  }
   .background-text {
     width: calc(80vw - 20px);
     margin-top: 40px;
@@ -369,5 +471,91 @@ body::-webkit-scrollbar {
     font-weight: 200;
     font-family: "Arial", sans-serif;
     color: #f3f0f0;
+  }
+}
+@media screen and (min-width: 863px) {
+  .post {
+    position: relative;
+    top: -320px;
+    left: -8px;
+    height: 220px;
+    background-color: white;
+    display: flex;
+    height: 100%;
+  }
+  .another-post {
+    position: relative;
+    top: -330px;
+  }
+  .badges {
+    position: relative;
+    top: 10px;
+  }
+  .filter-title::after {
+    bottom: -20px;
+  }
+  .post-link {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 914px) {
+  .filter-container {
+    gap: 150px;
+  }
+  .post {
+    top: -300px;
+  }
+  .another-post {
+    top: -310px;
+    left: 0px;
+  }
+  .post {
+    top: -300px;
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-container {
+    gap: 300px;
+  }
+  .post {
+    top: -290px;
+    left: 2px;
+  }
+  .another-post {
+    top: -325px;
+    left: 2px;
+  }
+  .member-title,
+  .topic-reply,
+  .forum-src,
+  .forum-title {
+    font-size: 14px;
+  }
+  .members-container {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .anoter-post {
+    left: 395px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .anoter-post {
+    left: 340px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .anoter-post {
+    left: 305px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .anoter-post {
+    left: 305px;
   }
 }

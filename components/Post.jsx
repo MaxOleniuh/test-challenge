@@ -13,7 +13,7 @@ const Post = ({ reply }) => {
           subtitle=""
           member="true"
         />
-        <span class="pro-member">Pro Member</span>
+        <span className="pro-member">Pro Member</span>
         {reply ? (
           <span className="topic-reply">replied to the topic</span>
         ) : (

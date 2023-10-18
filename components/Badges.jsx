@@ -4,7 +4,7 @@ import { FaEarthOceania } from "react-icons/fa6";
 const Badges = () => {
   return (
       <div className='badges-container'>
-          <h1 className='badges-title'>Quests</h1>
+          <h1 className='badges-title'>Badges</h1>
           <div className='badges-wrapper'>
           <FaEarthOceania className='badges-icon' size="3em"/>
           <div className="badges-info">

@@ -10,9 +10,10 @@ import Badges from "./Badges";
 const Main = () => {
   return (
   <div className="main-wrapper">
+    <div className="main-page">
       <Banner />
       <div className="row cols-3">
-        <div className="col">
+        <div className="col col-md">
           <div className="box">
             <Members/>
           </div>
@@ -22,14 +23,14 @@ const Main = () => {
             <FilterContainer/>
           </div>
         </div>
-        <div className="col">
+        <div className="col col-md">
           <div className="box">
             <Groups/>
           </div>
           </div>
       </div>
       <div className="row cols-3">
-        <div className="col">
+        <div className="col col-md quests-wrapper">
           <div className="box">
             <Quests />
           </div>
@@ -39,14 +40,15 @@ const Main = () => {
             <Post reply={true}/>
           </div>
         </div>
-        <div className="col">
+        <div className="col col-md badges">
           <div className="box">
             <Badges />
            </div>
         </div>
-      </div>
-      <div className="row cols-3">
-          <div className="col-6 anoter-post">
+        </div>
+        </div>
+      <div className="row another-row">
+          <div className="col-6 another-post">
             <Post reply={false} />
         </div>
       </div>

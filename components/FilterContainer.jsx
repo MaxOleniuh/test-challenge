@@ -4,7 +4,7 @@ const FilterContainer = () => {
   return (
       <div className='filter-container'>
           <p className='filter-title'>All Updates</p>
-          <BasicSelect/>
+          <BasicSelect />
     </div>
   )
 }
