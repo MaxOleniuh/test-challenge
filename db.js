@@ -1,7 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const url =
-  "mongodb+srv://NewUser:NewUser@cluster.v58ya9y.mongodb.net/db-contacts";
+const url = "some_url";
 const client = new MongoClient(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
