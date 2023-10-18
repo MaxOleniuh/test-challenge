@@ -1,33 +1,39 @@
 import React from 'react';
 import Group from './Group';
 
+import avatar6 from "../public/images/avatar-6.jpg";
+import avatar7 from "../public/images/avatar-7.jpg";
+import avatar8 from "../public/images/avatar-8.jpg";
+import avatar9 from "../public/images/avatar-9.jpg";
+import avatar10 from "../public/images/avatar-10.jpg";
+
 const groupData = [
   {
-    imageUrl: "./images/avatar-6.jpg",
+    imageUrl: avatar6,
     title: "Street Artists",
     memberCount: "4",
     isPublic: true,
   },
   {
-    imageUrl: "./images/avatar-7.jpg",
+    imageUrl: avatar7,
     title: "Cosplayers of the World",
     memberCount: "3",
     isPublic: true,
   },
   {
-    imageUrl: "./images/avatar-8.jpg",
+    imageUrl: avatar8,
     title: "Stream Designers",
     memberCount: "3",
     isPublic: true,
   },
   {
-    imageUrl: "./images/avatar-9.jpg",
+    imageUrl: avatar9,
     title: "Gaming Watchtower",
     memberCount: "3",
     isPublic: false,
   },
   {
-    imageUrl: "./images/avatar-10.jpg",
+    imageUrl: avatar10,
     title: "Living in Japan",
     memberCount: "2",
     isPublic: true,
