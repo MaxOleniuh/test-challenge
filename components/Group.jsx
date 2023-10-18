@@ -1,11 +1,12 @@
 import React from "react";
 import { SlLock } from "react-icons/sl";
 import { IoEarthSharp } from "react-icons/io5";
+import Image from "next/image";
 
 const Group = ({ imageUrl, title, memberCount, isPublic }) => {
   return (
     <div className="member">
-      <img
+      <Image
         src={imageUrl}
         alt={title}
         className="avatar"
