@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { BsCheckCircleFill } from "react-icons/bs";
 const Member = ({ imageUrl, title, subtitle, member }) => {
+    console.log(imageUrl)
     return (
         <div className="member">
                     <Image src={imageUrl} alt={title}
